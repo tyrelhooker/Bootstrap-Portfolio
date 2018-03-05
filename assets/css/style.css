@@ -88,7 +88,10 @@ h3 {
   padding: 5px;
 }
 
-
+.btn {
+  background-color: #4aaaa5;
+  color:#ffffff;
+}
 
 /* Extra small devices (phones, up to 480px) */
 /* @media screen and (max-width: 767px) {
