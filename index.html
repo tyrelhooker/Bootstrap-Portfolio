@@ -7,23 +7,23 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <!-- Customized CSS overwrites bootstrap -->
     <link rel="stylesheet" href="assets/css/style.css" >
 
-    <title>About Met</title>
+    <title>About Me</title>
   </head>
     
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
       <div class="container">
-        <div class="d-inline-flex card-header ml-4 ml-sm-3 ml-md-1 ml-lg-2 mr-2">
+        <div class="card-header ml-4 ml-sm-3 ml-md-1 ml-lg-2 mr-2">
           <h1><a class="nav-link" href="index.html">T.J. Hooker</a></h1>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
@@ -39,21 +39,25 @@
       </div>
     </nav>
 
-
+    <!-- Start main content of page -->
     <div class="container pt-3">
       <div class="row">
         <div class="col-12 col-md-8 pt-3 pb-4">
-          <div class="main-content p-3">
+          <div class="main-content p-3 text-justify">
             <h2>About Me</h2><hr>
             <img src="assets/images/headshot.jpg" alt="Placeholder" class="mx-auto d-block  float-sm-left pr-sm-3">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet molestie orci ut consequat. Etiam rhoncus commodo orci, id efficitur nunc tincidunt eu. Aliquam erat volutpat. Quisque rutrum mi arcu, non varius ante scelerisque id. Ut elementum tortor ut sodales convallis. Aliquam pharetra enim ac suscipit condimentum. Praesent bibendum feugiat mi, ut tempor diam hendrerit eu. Curabitur eget blandit diam. Sed congue pharetra sagittis. In ornare ante nec rutrum tincidunt. Maecenas eu sollicitudin ipsum. Donec aliquam accumsan mauris eu sollicitudin.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet molestie orci ut consequat. Etiam rhoncus commodo orci, id efficitur nunc tincidunt eu. Aliquam erat volutpat. Quisque rutrum mi arcu, non varius ante scelerisque id. Ut elementum tortor ut sodales convallis. Aliquam pharetra enim ac suscipit condimentum. Praesent bibendum feugiat mi, ut tempor diam hendrerit eu. Curabitur eget blandit diam. Sed congue pharetra sagittis. In ornare ante nec rutrum tincidunt. Maecenas eu sollicitudin ipsum. Donec aliquam accumsan mauris eu sollicitudin.</p>
+            <p>I am an attorney turned web developer. I spent over four years practicing law before realizing that I am a "builder" and deciding that I needed to change careers to reach by full potential. My interest in web development began several years ago while I was taking an introductory course to programming. UNC's coding bootcamp is providing me the structure to expand upon my basic programming foundation and become a full-stack web developer.</p>
+            
+            <p>As a practicing attorney I represented numerous business clients, as well as individuals, in a wide variety of legal matters including, but not limited to: drafting contracts, business formations, real estate disputes, estate planning, litigation, and litigation defense. I have strong public speaking and facilitating skills and the ability to manage multiple complex projects. In addition, I am an expert researcher and a fast learner, with the ability to become competent in various subject matters and manage large volumes of data.</p>
+            <!-- links to misc images in assets -->
+            <p>I live in Wake Forest with my incredibly supportive <a href="assets/images/wife.jpg">wife</a> and our lovely boxer, <a href="assets/images/lady.jpg">Lady</a>. When I am not coding or practicing law, I enjoy spending time outside. Most of this time is spent doing <a href="assets/images/yardwork.jpg">yard work</a>, but I do have the opportunity to mountain bike and trail run every now and then. Finally, (but most importantly) I am a diehard <a href="assets/images/hookem.jpg">Texas Longhorn</a> and Dallas Cowboys fan. </p>
           </div>
         </div>
-      
+
+        <!-- Social Media Container -->
         <div class="col-12 col-md-4 pt-3 pb-4">
           <div class="aside text-center p-3">
-            <h3 class=>Connect with me</h3><hr>
+            <h3>Connect with me</h3><hr>
             <ul class="list-inline">
               <li class="list-inline-item"><a class="social-icon text-sm-center" href="https://github.com/tyrelhooker" target="_blank"><img src="assets/images/github.png" width="50" height="50" alt="Go to GitHub!"></a></li>
               <li class="list-inline-item"><a class="social-icon text-sm-center" href="https://www.linkedin.com/in/t-j-hooker-bb973638" target="_blank"><img src="assets/images/linkedin.png" width="50" height="50" alt="Go to LinkedIn!"></a></li>
@@ -63,10 +67,18 @@
         </div>
       </div>
     </div>
+    
+    <!-- Sticky Footer -->
     <footer class="footer pt-3">
       <div class="container text-center">
-        <h6 class=>Copyright © T.J. Hooker</h6>
+        <h6>Copyright © T.J. Hooker</h6>
       </div>
     </footer>
+
+    <!-- Bootstrap core JavaScript=================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
